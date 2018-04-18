@@ -1,0 +1,19 @@
+
+.reveal pre code {
+    font-size: 1.2em;
+    line-height: 1.2;
+    max-height: 50vh !important;
+    border-radius: 10px;
+  }
+
+.reveal .slides section .code-presenting-annotation {
+    color: white;
+    background: #1f1c18;
+    padding: 1px 15px;
+    border-radius: 15px;
+    opacity: 0.75 !important;
+    font-size: 50% !important;
+  }
+
+
+.reveal section img { background:none; border:none; box-shadow:none; }

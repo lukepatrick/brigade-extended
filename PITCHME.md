@@ -1,7 +1,3 @@
-<style>
-.reveal section img { background:none; border:none; box-shadow:none; }
-</style>
-
 ![](assets/brigade.png)
 
 @fa[arrow-down]
@@ -177,3 +173,7 @@ data:
 @fa[twitter gp-contact](@lucus_patrick)
 
 @fa[github gp-contact](lukepatrick)
+
+---?image=assets/gitpitch-audience.jpg&opacity=100
+
+@title[Thank you!]
