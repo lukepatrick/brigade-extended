@@ -41,7 +41,7 @@
 ![](https://upload.wikimedia.org/wikipedia/commons/c/c0/I_want_you.jpg)
 
 ---
-# Gateway
+### Gateway
 
 - a gateway is an entity that generates events
 - out of the box Brigade ships with GitHub and DockerHub gateways
@@ -49,11 +49,13 @@
 - Anything could be a source of events, we want you to contribute
 
 ---
-# Kubernetes Secret
+### Kubernetes Secrets
 
 - Secrets are namespaced objects; exist in the context of a namespace
 - You can access them via a volume or an environment variable from a container running in a pod
 - The secret data on nodes is stored in tmpfs volumes
+@fa[arrow-down]
++++
 - A per-secret size limit of 1MB exists
 - The API server stores secrets as plaintext in etcd
 - All **data** fields must be base64 encoded
@@ -90,7 +92,7 @@ $ echo "Qm91bGRlcgo=" | base64 -D
 Boulder
 ```
 ---
-# Brigade Secrets
+### Brigade Secrets
 
 - **Events** are **Secrets**
 - Using the Kubernetes Secret API, Brigade events are specially labeled Secrets
@@ -98,7 +100,7 @@ Boulder
 @fa[arrow-down]
 +++
 
-Sample Brigade Secret
+### Sample Brigade Secret
 
 ```yaml
 apiVersion: v1
@@ -111,6 +113,16 @@ metadata:
     build: 01C1R2SYTYAR2WQ2DKNTW8SH08
     component: build
 type: brigade.sh/build
+```
+@[1-2]
+@[3-4]
+@[5-6]
+@[7-10]
+
+@fa[arrow-down]
++++
+
+```yaml
 data:
   event_provider: github
   event_type: push
@@ -124,13 +136,38 @@ data:
   script: "console.log('hello');"
 ```
 @[1]
+@[2]
 @[3]
-@[5-7]
+@[4-6]
+@[7-9]
+@[10]
+@[11]
 
 ---
-# References
+### GitLab Gateway
 
-https://kubernetes.io/docs/concepts/configuration/secret/
+[github.com/lukepatrick/brigade-gitlab-gateway](https://github.com/lukepatrick/brigade-gitlab-gateway)
+
+---?code=https://raw.githubusercontent.com/lukepatrick/brigade-gitlab-gateway/master/brigade-gitlab-gateway/cmd/brigade-gitlab-gateway/server.go&lang=golang&title=Gateway Executable
+
+@[30](Define HTTP Path)
+@[40-55](Define a handler, register events, and run a web endpoint)
+@[89-98](Parse and handle a Push Event)
+
+---?code=https://raw.githubusercontent.com/lukepatrick/brigade-gitlab-gateway/master/pkg/webhook/gitlab.go&lang=golang&title=Gateway Secret writer
+
+@[6](Use Brigade Core to write Secrets)
+@[64-75](Write Secret)
+
+
+---
+### References
+
+- [kubernetes.io/docs/concepts/configuration/secret](https://kubernetes.io/docs/concepts/configuration/secret)
+- [github.com/lukepatrick/brigade-gitlab-gateway](https://github.com/lukepatrick/brigade-gitlab-gateway)
+- [github.com/lukepatrick/brigade-bitbucket-gateway](https://github.com/lukepatrick/brigade-bitbucket-gateway)
+- [github.com/lukepatrick/minio-brigade](https://github.com/lukepatrick/minio-brigade)
+- [github.com/Azure/brigade](https://github.com/Azure/brigade)
 
 ---
 
