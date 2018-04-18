@@ -1,10 +1,9 @@
-# Brigade
+![](assets/brigade.png)
 
 @fa[arrow-down]
 +++
 
-![](https://brigade.sh/assets/images/brigade.png)
-![](http://hrbcinsurance.com/wp-content/uploads/2017/11/Extended-02-300.jpg)
+![](assets/brigadeex.png)
 
 ---
 
@@ -31,3 +30,4 @@
 ---
 ### Brigade Architecture
 
+![](https://raw.githubusercontent.com/Azure/brigade/master/docs/topics/img/design-overview.png)
