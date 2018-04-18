@@ -6,7 +6,7 @@
 #
 #theme : simple
 theme-override : assets/pitch.css
-highlight : atom-one-light
+highlight : atom-one-dark
 #logo : assets/image/logo.png
 transition : none
 published : true
