@@ -34,15 +34,16 @@
 
 
 ---
-![](https://upload.wikimedia.org/wikipedia/commons/c/c0/I_want_you.jpg)
-
----
 ### Gateway
 
 - a gateway is an entity that generates events
 - out of the box Brigade ships with GitHub and DockerHub gateways
 - other examples, **brig** CLI tool behaves as a gateway with a `brig run`
 - Anything could be a source of events, we want you to contribute
+
+---
+![](https://upload.wikimedia.org/wikipedia/commons/c/c0/I_want_you.jpg)
+
 
 ---
 ### Kubernetes Secrets
