@@ -8,6 +8,6 @@
 theme-override : assets/pitch.css
 highlight : atom-one-dark
 #logo : assets/image/logo.png
-transition : none
+#transition : none
 published : true
 #footnote : ""

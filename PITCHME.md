@@ -147,13 +147,19 @@ data:
 ---?code=https://raw.githubusercontent.com/lukepatrick/brigade-gitlab-gateway/master/brigade-gitlab-gateway/cmd/brigade-gitlab-gateway/server.go&lang=golang&title=Gateway Executable
 
 @[30](Define HTTP Path)
-@[40-55](Define a handler, register events, and run a web endpoint)
+@[40-50](Define a handler, register events, and run a web endpoint)
 @[89-98](Parse and handle a Push Event)
 
 ---?code=https://raw.githubusercontent.com/lukepatrick/brigade-gitlab-gateway/master/pkg/webhook/gitlab.go&lang=golang&title=Gateway Secret writer
 
 @[6](Use Brigade Core to write Secrets)
 @[64-75](Write Secret)
+
+---
+# Demo
+
+---
+
 
 
 ---
@@ -176,4 +182,4 @@ data:
 
 ---?image=assets/gitpitch-audience.jpg&opacity=100
 
-@title[Thank you!]
+# Thank you!
