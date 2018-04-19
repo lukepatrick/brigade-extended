@@ -180,6 +180,6 @@ data:
 
 @fa[github gp-contact](lukepatrick)
 
----?image=assets/gitpitch-audience.jpg&opacity=100
+---?image=assets/gitpitch-audience.jpg&opacity=50
 
 # Thank you!
